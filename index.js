@@ -12,7 +12,7 @@ const app = express();
 //     const $ = cheerio.load(html_data);
 
     // const selectedElem =
-    //   "#__next > div > div.marqueecontent > div.sc-57oli2-0.comDeo.cmc-body-wrapper > div > div:nth-child(1) > div.h7vnx2-1.bFzXgL > table > tbody > tr";
+    //   ".mymarquee  > div > div.mymarquee > div.marqueecontent > div > div:nth-child(1) > div.h7vnx2-1.bFzXgL > table > tbody > tr";
     // const keys = [
     //   "No.",
     //   "Coin",
