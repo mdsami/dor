@@ -81,3 +81,5 @@ app.get("/api/crypto", async (req, res) => {
 app.listen(PORT, () =>
   console.log(`The server is active and running on port ${PORT}`)
 );
+
+// Api url GET -> http://localhost:5000/api/crypto
