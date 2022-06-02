@@ -4,12 +4,12 @@ const cheerio = require("cheerio");
 const express = require("express");
 const app = express();
 
-async function cryptopriceScraper() {
-  const url = "https://coinmarketcap.com/";
-  const coinArray = [];
-  await axios(url).then((response) => {
-    const html_data = response.data;
-    const $ = cheerio.load(html_data);
+// async function cryptopriceScraper() {
+//   const url = "http://www.dam.gov.bd/";
+//   const coinArray = [];
+//   await axios(url).then((response) => {
+//     const html_data = response.data;
+//     const $ = cheerio.load(html_data);
 
     // const selectedElem =
     //   "#__next > div > div.marqueecontent > div.sc-57oli2-0.comDeo.cmc-body-wrapper > div > div:nth-child(1) > div.h7vnx2-1.bFzXgL > table > tbody > tr";
@@ -25,6 +25,13 @@ async function cryptopriceScraper() {
     // ];
 
 
+    async function cryptopriceScraper() {
+        const url = "http://www.dam.gov.bd/";
+        const coinArray = [];
+        await axios(url).then((response) => {
+          const html_data = response.data;
+          const $ = cheerio.load(html_data);
+      
     const selectedElem =
       "#__next > div > div.main-content > div.sc-57oli2-0.comDeo.cmc-body-wrapper > div > div:nth-child(1) > div.h7vnx2-1.bFzXgL > table > tbody > tr";
     const keys = [
