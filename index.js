@@ -26,7 +26,7 @@ const app = express();
 
 
     async function cryptopriceScraper() {
-        const url = "http://www.dam.gov.bd/";
+        const url = "https://coinmarketcap.com/";
         const coinArray = [];
         await axios(url).then((response) => {
           const html_data = response.data;
